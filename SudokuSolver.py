@@ -52,7 +52,7 @@ class SudokuSolver:
 		Returns either a solved puzzle or a failure.
 		"""
 		#If the last cell has been reached without finding a solution, return a failure.
-		if cell > len(availableCells): #WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+		if cell > len(availableCells):
 			failure = True
 			return puzzle, failure
 		#If the current cell is 9, reset to 1 and increment the next cell over.
